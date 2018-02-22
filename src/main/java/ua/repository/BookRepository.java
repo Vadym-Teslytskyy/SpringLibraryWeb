@@ -20,4 +20,11 @@ public interface BookRepository extends JpaRepository<Book, Integer>{
     
     Book averageBooksTimeReading(String bookName);
 
+
+
+
+
+
+
+
 }
