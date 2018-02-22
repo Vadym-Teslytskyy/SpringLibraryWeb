@@ -93,7 +93,6 @@
 			<version>${hibernate.version}</version>
 		</dependency>
 
-
 		<!-- Test Artifacts -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -110,3 +109,4 @@
 
 	</dependencies>
 </project>
+
