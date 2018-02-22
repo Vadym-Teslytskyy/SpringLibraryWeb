@@ -24,11 +24,15 @@ public interface BookRepository extends JpaRepository<Book, Integer>{
       */
     List<Book> findBooksRealesedDuringIndependencyPeriod();
     /** 
-     * Task 5
+     * Task 5.1
      */
     Book howManyTimesBookWasTakenAtAll(String bookName);
+    /**
+     * Task 5.2
+     */
+    Book howManyTimesBooksCopyWasTaken(String bookName);
     /** 
-     * Task 5
+     * Task 5.3
      */
     Book averageBooksTimeReading(String bookName);
     /** 

@@ -9,10 +9,23 @@ import java.time.LocalDate;
 
 public interface ClientRepository extends JpaRepository<Client, Integer>{
 
-    LocalDate howMuchTimeTheClientUseTheLibrary(String login);
+    /**
+     * Task 3.1
+     */
+    Book whichBookDidTakeTheClient(String login);
 
+    /**
+     * Task 3.2
+     */
     Book whichBooksClientDidntReturn(String login);
 
-    Book whichBookDidTakeTheClient(String login);
+    /**
+     * Task 3.3
+     */
+    LocalDate howMuchTimeTheClientUseTheLibrary(String login);
+
+
+
+
 
 }
