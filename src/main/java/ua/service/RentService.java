@@ -4,6 +4,8 @@ import org.springframework.stereotype.Repository;
 import ua.entity.Rent;
 
 
-public interface RentService extends CrudService<Rent, Integer>{
+public class RentService {
+
+    RentService rentService;
 
 }
