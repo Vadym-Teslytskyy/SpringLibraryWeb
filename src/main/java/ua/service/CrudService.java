@@ -1,10 +1,7 @@
 package ua.service;
 
-import org.springframework.stereotype.Repository;
-
 import java.io.Serializable;
 import java.util.List;
-
 
 public interface CrudService<T, ID extends Serializable>{
 	
