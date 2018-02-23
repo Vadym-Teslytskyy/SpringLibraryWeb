@@ -13,6 +13,6 @@
     <context:component-scan base-package="ua.repository"/>
     <context:component-scan base-package="ua.service"/>
 
-    <import resource="/WEB-INF/data.xml"/>
+    <import resource="data.xml"/>
 
 </beans>

@@ -36,9 +36,10 @@
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"/>
-        <property name="jpaDialect" value="${jdbc.dialect}" />
+        <!--<property name="jpaDialect" value="${jdbc.dialect}" />-->
         <property name="jpaProperties">
             <props>
+                <prop key="hibernate.dialect">${jdbc.dialect}</prop>
                 <prop key="hibernate.hbm2ddl.auto">update</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.format_sql">true</prop>
@@ -46,7 +47,7 @@
         </property>
         <!-- Set base package of your entities -->
         <property name="packagesToScan" value="ua.entity"/>
-        <property name="sharedCacheMode" value="ENABLE_SELECTIVE"/>
-        <property name="validationMode" value="NONE"/>
+        <!--<property name="sharedCacheMode" value="ENABLE_SELECTIVE"/>-->
+        <!--<property name="validationMode" value="NONE"/>-->
     </bean>
 </beans>
